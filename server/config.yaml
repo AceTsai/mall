@@ -6,7 +6,7 @@ server:
 mysql:
   username: root
   password: 123456
-  url: tcp(localhost:3306)/mall?charset=utf8mb4&parseTime=True&loc=Local
+  url: tcp(127.0.0.1:3306)/go-mall?charset=utf8mb4&parseTime=True&loc=Local
 
 # 图片路径配置
 upload:
