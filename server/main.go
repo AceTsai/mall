@@ -8,4 +8,5 @@ func main() {
 	initialize.Redis()
 	initialize.Elastic()
 	initialize.Router()
+	initialize.MainPath()
 }

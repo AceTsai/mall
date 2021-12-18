@@ -8,8 +8,9 @@ import (
 )
 
 var (
-	Config config.Config
-	Db     *gorm.DB
-	Rdb    *redis.Client
-	Es     *elastic.Client
+	Config   config.Config
+	Db       *gorm.DB
+	Rdb      *redis.Client
+	Es       *elastic.Client
+	MainPath string
 )

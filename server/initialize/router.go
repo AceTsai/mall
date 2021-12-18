@@ -16,8 +16,9 @@ func Router() {
 	engine.Use(middleware.Cors())
 
 	// 静态资源请求映射
-	engine.Static("/image", global.Config.Upload.SavePath)
+	//engine.Static("/image", global.Config.Upload.SavePath)
 
+	engine.GET("/image/:name", api.GetImage)
 	// 后台管理员前端接口
 	web := engine.Group("/web")
 
